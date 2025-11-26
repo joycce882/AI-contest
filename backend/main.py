@@ -27,7 +27,7 @@ app.add_middleware(
 )
 
 # 初始化 DeepSeek 客户端
-api_key = os.getenv("DEEPSEEK_API_KEY", "sk-77b8fe40d425464e99b7a7040e639686")
+api_key = os.getenv("DEEPSEEK_API_KEY")
 ai_client = OpenAI(
     api_key=api_key,
     base_url="https://api.deepseek.com"
